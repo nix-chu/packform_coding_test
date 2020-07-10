@@ -4,15 +4,18 @@
     <script src="./src/vue.min.js"></script>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>Order name</th>
-            <th>Customer Company name</th>
-            <th>Customer name</th>
-            <th>Order date</th>
-            <th>Delivered amount</th>
-            <th>Total amount</th>
-        </tr>
-    </table>
-    <script src="./src/loadDatabase.js"></script>
+    <input type="text" v-model="table"></input>
+    <div id="table">
+        <table>
+            <tr>
+                <th>Order name</th>
+                <th>Customer Company name</th>
+                <th>Customer name</th>
+                <th>Order date</th>
+                <th>Delivered amount</th>
+                <th>Total amount</th>
+            </tr>
+        </table>
+    </div>
+    <script src="./src/orders/js"></script>
 </body>

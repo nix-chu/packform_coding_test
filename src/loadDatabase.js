@@ -2,8 +2,8 @@ const MongoClient = require("mongodb").MongoClient;
 const assert = require("assert");
 
 // Connecting to database
-const url = "mongodb://localhost:27017";
-async function connect() {
+const url = "mongodb://localhost:27017"; // database url
+async function getItems() {
   const client = new MongoClient(url, {useNewUrlParser: true, useUnifiedTopology: true});
   
   let items = []; // To store items in database and return
@@ -22,7 +22,6 @@ async function connect() {
     items.push(orderItems)
     orders = await db.collection("orders").find({}).toArray();
     items.push(orders)
-    console.log(items)
   }
   catch (ex) {
     console.error('Something bad happened. '+ex);
@@ -34,4 +33,8 @@ async function connect() {
   return items
 }
 
-connect();
+module.exports ={
+  getItems: function() {
+    return getItems()
+  }
+}
