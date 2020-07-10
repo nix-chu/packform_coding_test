@@ -4,18 +4,9 @@
     <script src="./src/vue.min.js"></script>
 </head>
 <body>
-    <input type="text" v-model="table"></input>
-    <div id="table">
-        <table>
-            <tr>
-                <th>Order name</th>
-                <th>Customer Company name</th>
-                <th>Customer name</th>
-                <th>Order date</th>
-                <th>Delivered amount</th>
-                <th>Total amount</th>
-            </tr>
-        </table>
+    <input type="text" v-model="searchQuery"></input>
+    <div>
+        <b-table items="items"></b-table>
     </div>
     <script src="./src/orders/js"></script>
 </body>
