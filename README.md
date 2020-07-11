@@ -3,8 +3,9 @@
 
 The task was to develop a script to initialise a database and a web application to display the data. User interface must be implement using Vue.js and backend application should use Golang (although Python is also acceptable). Solution must be scalable.
 
-## Tech requirements
-- MongoDB release 4.2 (or earlier)
+## Recommended Software Requirements
+- MongoDB release 4.2 (or later)
+- Node.js release 14.5.0 (or later)
 - Cannot be run using Internet Explorer 8
 
 ## Set-up Instructions
