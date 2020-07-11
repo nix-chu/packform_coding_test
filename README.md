@@ -12,4 +12,4 @@ The task was to develop a script to initialise a database and a web application 
 Assumes prior experience with MongoDB, otherwise visit this link on [how to run MongoDB services](https://docs.mongodb.com/guides/server/install/#procedure) (Skip to step 2).
 1. Connect to MongoDB servers through localhost:27017 port.
 2. Run `initialise_database.py`.
-3. Open `orders.html`.
+3. Open `orders.html`. *(incomplete)*
