@@ -4,7 +4,7 @@
     <script src="./src/vue.min.js"></script>
 </head>
 <body>
-    <input type="text" v-model="searchQuery"></input>
+    <input type="text" v-model="searchQuery" onchange="displayTableData()"></input>
     <div>
         <b-table items="items"></b-table>
     </div>
