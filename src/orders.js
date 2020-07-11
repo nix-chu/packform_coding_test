@@ -36,10 +36,10 @@ data.then(function(data) { // To overcome issues with variable as a Promise data
     }
 
     new Vue({
-        el: #table,
+        el: "#table",
         data: {
-            let query = document.getElementById('searchQuery').value;
-            return displayTableData(query)
+            query = document.getElementById('searchQuery').value,
+            displayTableData(query)
         }
     })
 });
