@@ -10,9 +10,12 @@ def import_data(name, filename):
     :complexity: O(N), N represents the total number of items uploaded
     '''
     collection = database[name]
-    with open(filename,'r') as file:
-        for item in csv.DictReader(file):
-            collection.insert_one(item)
+    try:
+        with open(filename,'r') as file:
+            for item in csv.DictReader(file):
+                collection.insert_one(item)
+    except FileNotFoundError as e:
+        print(e+" Importing next file.")
 
 # Populate database
 import_data("customers", "test_data/Test task - Mongo - customers.csv")
